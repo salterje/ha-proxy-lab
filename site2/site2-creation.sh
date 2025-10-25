@@ -1,9 +1,9 @@
 # Script to create podman container based on httpd and serving local content
 
-site_number=1
+site_number=2
 
 
-for i in {1..3}
+for i in {4..6}
 do	
     server_number=$i
     container_name=site$site_number\_server\_$server_number
