@@ -2,6 +2,13 @@
 
 site_number=2
 
+for i in {4..6}
+do
+    server_number=$i
+    container_name=site$site_number\_server\_$server_number
+    echo "Removing currently running container " 
+    podman container rm -f $container_name
+done
 
 for i in {4..6}
 do	
